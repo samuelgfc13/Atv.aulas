@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informaçoes</title>
+</head>
+<body>
+    <form>
+        <label for= "inputnome">Nome e Sobrenome:</label>
+        <input type="text" id="inputnome">
+        <div><br>
+        <label for= "inputemail">Email:</label>
+        <input type="text" id="inputnome">
+        <div><br>
+        <label for= "inputtel">Telefone:</label>
+        <input type="number">
+        <div>
+       <label for= "textareatext">Mensagem:</label><br>
+        <textarea name="textareatext" id="textareatext" cols="30" rows="10"></textarea>
+        <fieldset>
+            <legend>Como prefere nosso contado?</legend>
+            <input type="radio"name="email" value= "email">Email
+            </label>
+        <label>
+            <input type="radio" name="devweb" value="Telefone">Telefone
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="Whatsapp">Whatsapp
+        </label>
+        </fieldset><br>
+        <fieldset>
+            <legend>Qual horario prefere ser atendido?</legend>
+            <select id="horario">
+                <option>MANHA</option>
+                <option>TARDE</option>
+                <option>NOITE</option>
+            </select>
+        </fieldset>
+        <br>
+            <input type="checkbox" value="">Gostaria de receber nossas novidades por email?
+            <br>
+            <br>
+            <button>Enviar Formulario</button>
+            <br>
+            <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Segunda</td>
+                <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>8h ~ 20h</td>
+            </tr>
+        </table>    
+    </form>
+    <a href="Barbearia.html">Voltar</a>
+
+<style>
+     label{
+            width: 85px;
+            display: inline-block;
+        }
+    table, td, th {
+        border: solid gray;
+        border-collapse: collapse;
+     }
+     th{
+       background-color: rgb(0, 0, 0) ;
+       color: white; 
+     }
+</style>
+
+</body>
+</html>

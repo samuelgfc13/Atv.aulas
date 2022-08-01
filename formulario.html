@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Informações Pessoais</h1>
+    <form>
+        <fieldset>
+             <legend>Cadastro do cliente</legend>     
+        <label for= "inputnome">Nome:</label>
+        <input type="text" id="inputnome"
+        placeholder="Digite seu Nome">
+    <div><br/>
+        <label>Sexo:</label>
+        <label>
+            <input type="radio" name="devweb" value="Masculino">Masculino
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="Feminino">Feminino
+        </label>
+    </div><br/>
+    <label for= "inputnumber">Idade:</label>
+        <input type="number" id="inputnumber"
+        placeholder="Digite sua idade">
+        <div><br/>
+    <label for= "inputender">Endereço:</label>
+        <input type="text" id="inputender"
+        placeholder="Digite o Endereço">
+    </div>
+    <div><br/>
+        <label for= "inputcity">Cidade:</label>
+        <input type="text" id="inputcity"
+        placeholder="Digite a cidade">
+    </div>
+    <div><br/>
+        <label>Estado</label>
+        <select id="Estado">
+            <option>UF</option>
+            <option>RO</option>
+            <option>SP</option>
+            <option>RJ</option>
+            <option>PA</option>
+        </select>
+    </div>
+    <div><br/>
+        <label for= "inputcep">CEP:</label>
+        <input type="number" id="inputcep"
+        placeholder="XXXXX-XXX">    
+    </div>
+    <div><br/>
+        <label for= "inputres">Tel/Res:</label>
+        <input type="tel" id="inputres"
+        placeholder="(99)99999-9999">
+    </div>
+    <div><br/>
+        <label for= "inputcell" class="alinhamento">Tel/Cel:</label>
+        <input type="tel" id="inputcell"
+        placeholder="(99)99999-9999">
+    </div>
+    <div><br/>
+        <label for= "inputemail" class="alinhamento">Email:</label>
+        <input type="email" id="inputemail"
+        placeholder="Digite o endereço de email">
+    </div>
+    </fieldset>
+    <div><br/>
+        <button>incluir</button>
+    </div>
+     </form>
+     <style>
+        label{
+            width: 70px;
+            display: inline-block;
+        }
+     </style>
+</body>
+</html>
