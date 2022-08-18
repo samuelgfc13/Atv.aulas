@@ -12,8 +12,9 @@
   <a href="#">Home</a>
   <a href="#">Roupas</a>
   <a href="#">Acessorios</a>
-  <a href="#"> <img src="compra.png" alt="350"><span>Carrinho de compras</span></a>
+  <a href="#"><span>Carrinho de compras</span><img src="compra.png" alt="350"></a>
 </div>
+
 
 <div class="row">
 	<div>
@@ -54,18 +55,49 @@
         padding: 30px;
         background-color: white;
     }
-    .topnav{
-        background-color: black;
+	.topnav span, img{
+		float: right;
+	}
+	.topnav img{
+		height: 22px;
 
-    }
+	}
+	.topnav {
+		background-color: #100202;
+		padding-left: 14px;
+		padding-right: 16px;
+		padding: 10px;
+	}
+	.topnav > a{
+		text-decoration: none;
+		color: white;
+		padding: 8px;
+
+	}
     .sellcard{
-        width: 50%;
-        width: 320px;
-        height: 150px;
-        padding-top: 30px;
-        display: block;
-        display: inline;
-        display: inline-block;          
+		float: left;
+		width: 23.40%;
+		margin: 10px;
     }
+	.sellcard img{
+		width: 86%;
+		margin: auto;
+	} 
+	.descricao{
+		text-align: center;
+		font-family: Helvetica;
+		font-variant: normal;
+		font-size: 20px;
+		font:400
+	}
+	.valor{
+		text-align: center;
+		font: 0.8em;
+		font-weight: 700;
+	}
+	.compra{
+		text-align: center;
+	}
+
 </style>
 </html>
