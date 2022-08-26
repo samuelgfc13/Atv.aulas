@@ -1,0 +1,107 @@
+<html>
+<head>
+	<title>Exercecio Restaurante / Pizzaria</title>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#">Inicio</a>
+  <a href="#cardapio">Cardapio</a>
+  <a href="#">Contato</a>
+</div>
+
+<div class="header"></div>
+<img src="pizza.jpg">
+<div class="titulo-principal">PIZZARIA</div>
+
+<div class="row" id="cardapio">
+	<div class="card">
+		<h1>Pizzas</h1>
+		<ul class="listas">
+			<li> <p>Portuguesa - Mussarela, presunto, ovo de codorna, azeitona preta, cebola e pimentao verde.<span class="preco">R$ 29,90</span></p> </li>
+			<li> <p>4 Queijos - Mussarela, requeijao, gorgonzola e parmesao ralado.<span class="preco">R$ 29,90</span></p> </li>
+			<li> <p>Bauru - Mussarela, presunto, requeijao e tomate.<span class="preco">R$ 29,90</span></p> </li>
+			<li> <p>Frango Grelhado - Mussarela, frango, requeijao, tomate, azeitona preta e manjericao.<span class="preco">R$ 29,90</span></p> </li>
+		</ul>
+	</div>
+</div>
+
+<div class="footer">
+  <h2>Aberto</h2>
+  <p>
+	Seg - Sex das 17 as 23 horas.
+  </p>
+</div>
+
+</body>
+
+<style>
+    html{
+        background-color:whitesmoke;
+    }
+    .topnav {
+		background-color: #383535;
+		padding-left: 14px;
+		padding-right: 16px;
+		padding: 10px;
+	}
+    .topnav > a{
+		text-decoration: none;
+		color: white;
+		padding: 8px;
+    }
+    .titulo-principal{
+        position: absolute;
+        font-size: 100px;
+        left: 250px;
+        top: 135px;
+    }
+	.row{
+	    text-align: left;
+        padding: 30px;
+        background-color: rgb(220, 208, 208);
+	}
+	.footer{
+	    text-align: center;
+        padding: 30px;
+        background-color: rgb(186, 182, 182);
+	}
+	.preco{
+		float: right;
+		background-color: #858282;
+		padding: 7px;
+	}
+	:root{
+            --bg-color: rgba(206, 31, 31, 0.548);
+            --bg-second: #444;
+            --font-color:white;
+            --font-size-big: 28px;
+            --font-size-small: 16px;
+        }
+	
+		@media (max-width: 800px){
+				.footer{
+					flex-direction: column;
+				width: auto;}
+				.topnav{
+					text-align: center;
+				}
+				.card{
+					text-align: center;
+				}
+				.listas{
+					text-align: center;
+				}
+			}
+				
+	
+	
+
+	
+	
+
+
+
+
+</style>
+</html>
