@@ -1,0 +1,10 @@
+.menu__link {
+    color: 3;
+    padding: 0.5rem;
+
+}
+
+.menu__link:haver
+.menu__link:active {
+    border-bottom: 2px solid blue;
+}
