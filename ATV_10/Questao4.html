@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questao 4</title>
 </head>
-<body> <script>
+<body>
+    <script>
     const produtos = Number(prompt("Valor do Produto: "))
-    const desconto = produtos 
-
-</script>
+    const desconto = produtos - ( produtos * 0.1 )
+    const parcelas = produtos / 3
+    alert (`Valor Avista ${produtos}\n
+    Produto com Desconto R$: ${desconto}\n
+    Total das Parcelas R$: ${parcelas.toFixed(2)}`)
+    </script>
 </body>
 </html>
