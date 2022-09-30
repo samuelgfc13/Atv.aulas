@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTAO 3</title>
+</head>
+<body>
+    <script>
+        const altura = Number(prompt("altura: "))
+        const sexo = (prompt(`Sexo escolher 1 ou 2: 
+        masculino - 1
+        femenino - 2 `))
+
+        if(sexo == 1){
+            var peso_ideal = (72 * altura) - 58
+        }else if (sexo == 2){
+            var peso_ideal = (62 * altura) - 44
+        }
+        alert(`PESO IDEAL: ${peso_ideal.toFixed(2)}`)
+
+    </script>
+</body>
+</html>

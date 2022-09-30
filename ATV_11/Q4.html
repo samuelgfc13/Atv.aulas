@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 4</title>
+</head>
+<body>
+    <script>
+        const nome = String(prompt("Nome Cliente: "))
+        const valor = Number(prompt("Valor do Produto: "))
+       
+        
+        if( valor <= 200){
+            var desconto = valor - ( valor * 0.10)
+        }
+        else if (valor > 200 && valor <= 500){
+            var desconto = valor - (valor * 0.15)
+        }
+        else if (valor > 500){
+            var desconto = valor - (valor * 0.20)
+        }
+        alert(`NOME DO CLIENTE: ${nome}\*
+        VALOR DA COMPRA: ${valor}\*
+        TOTAL A PAGAR: ${desconto}`)
+    </script>
+</body>
+</html>
