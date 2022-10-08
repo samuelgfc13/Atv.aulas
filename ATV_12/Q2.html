@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 2</title>
+</head>
+<body>
+    <script>
+       let valor_total = 0
+       let escopo = false
+
+       do{
+        let condiçao = prompt('fazer um novo lanaçamento ? ( s / n): ')
+        if(condiçao != 's'){
+            break
+        }
+        let valor_produto = Number(prompt('valor do produto R$: '))
+        valor_total += valor_produto
+       }while(true)
+
+       if(valor_total == 0){
+        end()
+       }
+       let valor_pago = Number(prompt(`valor toral foi R$ ${valor_total.toFixed(2)}`))
+
+       if(valor_pago > valor_total){
+        alert(`seu troco será R$ ${(valor_pago - valor_total).toFixed(2)}`)
+       }else if (valor_pago == valor_total){
+        alert("Voce nao recebera troco!")
+       }else{
+        alert("Esta faltando dinheiro !")
+       }
+    
+
+
+    </script>
+    
+</body>
+</html>

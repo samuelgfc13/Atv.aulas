@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 6 </title>
+</head>
+<body>
+    <script>
+        let valor_inserido = Number(prompt("Insirir o valor se é perfeito ou nao"))
+        let alert = ''
+
+        let lista_divisor = []
+        let soma_valores = 0
+
+
+        for (let i = 0; i < valor_inserido; i++){
+            if (valor_inserido % i == 0 ){
+                lista_divisor.push(i)
+            }
+        }
+
+        lista_divisor.push(valor_inserido)
+        lista_divisor.pop()
+
+        for (let i = 0; i < lista_divisor.length; i++) {
+            soma_valores += lista_divisor[i]
+        }
+        if(soma_dvisor != valor_inserido){
+            alerta += "o valor inserido nao é perfeito\n"
+            alerta += `a lista de divisores é: ${lista_divisor}\n`
+            alerta += `a soma dos divisores é: ${soma_dvisor}\n`
+        }else{
+            alerta += "o valor inserido é perfeito\n"
+            alerta += ` a lista de divisores é: ${lista_divisor}\n`
+            alerta += `a soma dos divisores é: ${soma_dvisor} \n`
+        }
+        alert(alerta)
+    </script>
+</body>
+</html>

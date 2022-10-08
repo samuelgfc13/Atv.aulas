@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 3</title>
+</head>
+<body>
+    <script>
+    
+    const preço = Number(prompt("Preço: "))
+    
+    
+    const parcelas= Number(prompt("QUANTAS PARCELAS: "))
+
+    if (parcelas <= 6 ){
+        var calc =  preço / parcelas 
+    } else if(parcelas > 6){
+        alert("O LIMITE É 6 PARCELAS !")     
+    } 
+       if (calc < 20){
+        alert("MINIMO DE PARCELAS R$20")
+    }else 
+    
+    alert(`total: ${calc.toFixed(2)}`)
+
+
+
+
+
+
+    </script>
+</body>
+</html>
