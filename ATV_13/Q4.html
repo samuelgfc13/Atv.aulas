@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04</title>
+</head>
+<body>
+    <script>
+        var turma=[],notas=[],destaques=[],maiornota;
+		do{
+            nome=(prompt("Digite o nome do aluno: "));
+           
+            if(nome != "Fim"){
+                turma.push(nome)
+                notas.push(Number(prompt("Insira a nota: ")));
+            }
+			
+		}while(nome != "Fim")
+
+        maiornota = Math.max(...notas)
+        
+        document.write(`Maior nota da Turma: ${maiornota} `);
+
+        if(maiornota>=7){
+            for (i = 0; i < notas.length; i++){
+                if (notas[i] == maiornota){
+                    destaques.push(turma[i])
+                }
+            }
+            document.write(`</br> Aluno(s) destaque(s): ${destaques}`)
+        } else{ 
+            document.write(`</br> Não há alunos em destaque na turma!`)
+        }
+	
+    </script>
+</body>
+</html>

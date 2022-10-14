@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questao03</title>
+</head>
+<body>
+    <script>
+        let diaSemana = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sabado', 'Domingo'];
+        let qtdDiaSemana = diaSemana.length
+        let temp = []
+        let resultado = ''
+
+        for(let i = 0; i < qtdDiaSemana; i++){
+            let temperaturaDia = Number(prompt(`Digite a temperatura: ${diaSemana[i]}`))
+            temp.push(temperaturaDia)
+        }
+
+        resultado += `A menor temperatura da semana foi: ${Math.min(...temp)} graus!`
+        resultado += `A maior temperatura da semana foi: ${Math.max(...temp)} graus!`
+
+        alert(resultado)
+        
+    </script>
+</body>
+</html>

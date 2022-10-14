@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questao06</title>
+</head>
+<body>
+    <script>
+        let listaNum = [];
+        let resultado = '';
+
+        while(true){
+            let numero = Number(prompt('Digite o valor do saque (se desejar sair digite 0):'));
+
+            if(numero == 0){
+                break;
+            }
+            let divisor = numero % 10;
+            
+            if(divisor == 0){
+                alert('Saque Válido');
+            
+            }else{
+                alert('Saque inválido');
+            
+            }
+            
+            listaNum.push(numero)
+        
+        
+        }
+
+        let numerosValidos = listaNum.filter(a => a % 10 == 0);
+
+        let somaValidos = numerosValidos.reduce(
+            (validoAnterior, valoratual) => valorAnterior + valorAtual, 0
+        )
+
+        resultado += `Os números válidos são: ${numerosValidos}\n`
+        resultado += `A soma dos números válidos são: ${somaValidos}\n`
+        resultado += `Existe um total de: ${listaNum.length - numerosValidos.length} números válidos\n`;
+
+        alert(resultado)
+
+        
+    </script>
+</body>
+</html>

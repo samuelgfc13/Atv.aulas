@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+<body>
+    <script>
+        var clientes=[],idade=[],preferencial=[],normal=[];
+
+		do{
+            nome=(prompt("Insira o nome do cliente: "));
+           
+            if(nome != "Fim"){
+                clientes.push(nome)
+                idade.push(Number(prompt("Insira a idade do cliente: ")));
+            }
+			
+		}while(nome != "Fim")
+
+        for (i = 0; i < idade.length; i++){
+            if (idade[i] >= 60){
+                 preferencial.push(clientes[i])
+            }else{
+                normal.push(clientes[i])
+            }
+        }
+        document.write(`Clientes preferenciais: ${preferencial}`)
+        document.write(`</br> Fila normal: ${normal}`)  
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+<body>
+    <script>
+        var nomes = []
+        var notas = []
+        var media = 0
+
+        for (var i = 0; i < 5; i++){
+            nomes[i] = prompt('Digite o nome do aluno: ')
+            notas[i] = Number(prompt('Digite a nota: '))
+            media = media + notas[i]
+        }
+
+        for (var i = 0; i < 5; i++){
+            document.writeln("Aluno: " + nomes[i] + " "+ "Nota: " + notas[i] + " || ")
+        }
+        document.writeln("Média: " + media / 5)
+    </script>
+</body>
+</html>
