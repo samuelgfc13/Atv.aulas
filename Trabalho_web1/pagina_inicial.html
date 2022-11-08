@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABALHO_FINAL_WEB</title>
+
+</head>
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="img/jusitça_eleitoral.png" alt="Logo" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="pagina_inicial.html" class="active">Home</a>
+            <a href="News.html">News</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="pagina_info.html">Informativo</a>
+            <a href="Podcast.html">Podcast</a>
+            <a href="game.html">Game</a>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <h1></h1>
+    </div>
+    <main>
+        <nav class="principal">
+            <img src="img/urna-2_capa_tb-1060x596.jpeg" class="urna01">
+            <h1>Um pequeno resumo dos assuntos tratados:</h1>
+            <ul>
+                <li> O sistema eleitoral brasileiro é o sistema pelo qual se organiza a escolha dos representantes
+                    governamentais do Brasil.</li>
+
+                <li> O sistema eleitoral brasileiro teve a sua dinâmica estabelecida na Constituição de 1988.</li>
+
+                <li>Nele, o voto é obrigatório para todos que têm entre 18 e 70 anos.</li>
+
+                <li>Existem dois sistemas dentro do sistema eleitoral brasileiro: o sistema majoritário e o sistema
+                    proporcional.</li>
+
+                <li>O sistema majoritário demanda que o candidato eleito alcance maioria simples ou absoluta na eleição.
+                </li>
+
+                <li>O sistema proporcional demanda que o candidato e o seu partido alcancem o critério conhecido como
+                    quociente eleitoral.</li>
+            </ul>
+            <img src="img/maxresdefault.jpg" alt="">
+            <h1>Como funciona o sistema eleitoral brasileiro?</h1>
+            <p>
+                O sistema eleitoral brasileiro determina a escolha dos representantes governamentais do país no
+                Legislativo e no Executivo. A escolha deles se dá pelo voto popular, o meio pelo qual a população
+                tem possibilidade de participar diretamente do processo político brasileiro.
+            </p>
+            <p> Esse sistema foi estabelecido na Constituição Federal de 1988, e seu funcionamento é
+                responsabilidade do Tribunal Superior Eleitoral (TSE). A escolha dos governantes e a participação
+                popular pelo voto acontecem nas eleições, realizadas em nosso país a cada dois anos.
+            </p>
+            <p>
+                O sistema brasileiro pode ser organizado da seguinte maneira:
+            </p>
+            <ul>
+                <li>eleições majoritárias em um único turno;</li>
+                <li>eleições majoritárias em dois turnos;</li>
+                <li>eleições proporcionais."</li>
+            </ul>
+            <p> A Constituição de 1988 determina ainda quem são aqueles que podem votar para eleger os nossos
+                representantes. Segundo o artigo 14 da Constituição, “a soberania popular será exercida pelo
+                sufrágio universal e pelo voto direto e secreto, com valor igual para todos”. Em outras palavras, a
+                Constituição determina que todos os cidadãos brasileiros (acima de 16 anos) têm direito ao voto.
+            </p>
+            <p>
+                A Constituição estabelece que as pessoas com 18 a 70 anos são obrigadas a votar. Os analfabetos,
+                pessoas com 16 ou 17 anos e indivíduos com mais de 70 anos podem votar, mas não são obrigados a
+                fazê-lo.
+            </p>
+
+            <h1>O que é e como funciona o sistema majoritário?</h1>
+            <p>O sistema majoritário funciona de maneira bem simples: ele determina que para ser eleito, o candidato (ou
+                os candidatos, no caso da eleição de senador) deve obter a maioria absoluta dos votos ou a maioria
+                simples. Entenderemos por que existem esses dois critérios.</p>
+            <h2>→ Maioria absoluta</h2>
+            <p>Alcançar a maioria absoluta significa que o candidato obteve mais de 50% do total de votos válidos.
+                Lembrando que para determinar o resultado de uma eleição, os votos nulos, brancos e os eleitores
+                ausentes são descartados da contagem, e considera-se apenas o eleitorado que de fato votou em algum
+                candidato.</p>
+            <p>Assim, tirando os votos nulos, brancos e os eleitores ausentes, sobram os votos válidos. O candidato que
+                obtém mais de 50% dos votos é eleito. Essa modalidade de contagem é usada para a eleição de presidentes,
+                governadores e prefeitos de cidades com mais de 200 mil eleitores. No caso da necessidade de maioria
+                absoluta, a eleição pode ser realizada em dois turnos. Isso porque se no primeiro turno nenhum dos
+                candidatos obtiver a quantidade mínima de votos para ser eleito (mais de 50%), um segundo turno é
+                estabelecido com os dois candidatos mais votados do primeiro.</p>
+            <h2>→ Maioria simples</h2>
+            <p>No caso da maioria simples, não é necessário que o candidato obtenha a maioria absoluta dos votos. Assim,
+                são eleitos os candidatos que possuem a maior quantidade de votos, mesmo que a porcentagem seja inferior
+                a 50%. O sistema com base na maioria simples é utilizado para a eleição de senadores e prefeitos de
+                cidades com menos de 200 mil eleitores.</p>
+
+            <img src="img/reforma politica editada.jpg" alt="">
+            <h1>O que é e como funciona o sistema proporcional?</h1>
+            <p>Isso porque, nesse sistema, os partidos conquistam vagas legislativas por meio da quantidade de votos
+                que receberam. O que determina a quantidade de vagas legislativas que um partido recebeu é ele ter
+                conquistado ou não o mínimo de votos estabelecido pelo quociente eleitoral. Uma vez feita essa
+                contabilidade, os partidos recebem a quantidade de vagas proporcionais à sua vantagem.
+                Assim, se o quociente eleitoral for de dez mil votos e um partido específico conquistar 70 mil votos,
+                isso significa que ele terá sete vagas legislativas. <br>
+                Dessa forma, sete candidatos desse partido (os sete
+                mais votados) serão eleitos para a vaga legislativa a que estiverem concorrendo. Caso um partido não
+                alcance a quantidade estabelecida pelo quociente eleitoral, ele não conquistará nenhuma vaga."
+                Veja mais sobre "Você sabe como funciona o sistema eleitoral brasileiro?</p>
+            <p>Isso porque, nesse sistema, os partidos conquistam vagas legislativas por meio da quantidade de votos
+                que receberam. O que determina a quantidade de vagas legislativas que um partido recebeu é ele ter
+                conquistado ou não o mínimo de votos estabelecido pelo quociente eleitoral. Uma vez feita essa
+                contabilidade, os partidos recebem a quantidade de vagas proporcionais à sua vantagem.
+                <br>
+                Assim, se o quociente eleitoral for de dez mil votos e um partido específico conquistar 70 mil votos,
+                isso significa que ele terá sete vagas legislativas. Dessa forma, sete candidatos desse partido (os sete
+                mais votados) serão eleitos para a vaga legislativa a que estiverem concorrendo. Caso um partido não
+                alcance a quantidade estabelecida pelo quociente eleitoral, ele não conquistará nenhuma vaga.
+            </p>
+            <p>Se um partido não tiver o total de candidatos suficientes para preencher as vagas conquistadas, a
+                legislação eleitoral brasileira determina que esse partido deve perder as vagas não preenchidas, e elas
+                são redistribuídas para os outros partidos e candidatos na disputa.
+
+            </p>
+
+        </nav>
+        <section class="auxiliar">
+            <h1>Curiosidades:</h1>
+            <nav>
+                <img src="img/jusitça_eleitoral.png" alt="">
+                
+                <a
+                    href="https://www.tre-pi.jus.br/o-tre/memoria-e-cultura/evolucao-da-justica-eleitoral-no-brasil"><h3>Evolução da Justiça Eleitoral no Brasil</h3></a>
+            </nav>
+            <nav>
+                <img src="img/TSE.jpg" alt="">
+                <a
+                    href="https://mundoeducacao.uol.com.br/politica/sistema-eleitoral-brasileiro-como-funciona.htm"><h3 >Sistema eleitoral brasileiro: como funciona?</h3></a>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <span>Copyright &copy; | Trabalho final web 1</span>
+    </footer>
+</body>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.principal{
+    margin-top: -650px;
+}
+main {
+    display: flex;
+    margin: 20px 150px 0px 200px;
+    flex-direction: row;
+    font-size: larger;
+    padding-bottom: 30px;
+}
+
+main nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 0px 15px;
+}
+
+main .principal {
+    width: 70%;
+}
+
+main .principal h1 {
+    text-align: center;
+}
+
+main .auxiliar {
+    width: 30%;
+
+}
+
+main nav img {
+    width: 80%;
+    align-self: center;
+    padding: 20px 0 20px 0;
+}
+
+main nav h1 {
+    padding: 10px;
+}
+
+main nav p {
+    text-align: justify;
+    text-indent: 3%;
+    font-family: ReithSans, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+}
+
+main nav ul {
+    padding: 10px;
+    padding-left: 10%;
+}
+
+.auxiliar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px;
+    margin-top: -650px;
+}
+
+.auxiliar nav {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border: outset 1px #e39322;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.auxiliar h1{
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.auxiliar a {
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: #222;
+    font-size: 1.2em;
+}
+
+.auxiliar a:hover {
+    background-color: white;
+}
+
+@media(max-width:1280px) {
+main {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    padding: 5px;
+    width: 100%;
+    margin: 0;
+}
+
+main nav {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.principal{
+    margin-top: -670px;
+}
+main .principal{
+    width: 100%;
+}
+main .auxiliar{
+    margin-top: 160px;
+    width: 100%;
+}
+
+main nav p {
+    text-align: justify;
+    text-indent: 3%;
+    font-family: ReithSans, Helvetica, Arial, sans-serif;
+    font-weight: auto;
+    font-style: normal;
+}
+}
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    background-color:rgb(251, 167, 49);
+
+}
+
+:root{
+    --color-white: #fff;
+    --color-dark1: rgb(252, 191, 7);
+    --color-dark2: #2d2d2d;
+    --color-dark3: #db5959;
+    --color-dark4: #da0c0c;
+    --color-dark5: rgb(252, 191, 7);
+    --color-purple: #ffffff;
+    }
+
+.logo_header{
+    width: 70px;
+}
+.header,
+.navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    background-color: rgb(251, 167, 49);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 7.5em;
+    box-shadow: 1px 1px 4px var(--color-dark4);
+}
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+.content{
+    padding-top: 5em;
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+}
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-purple);
+    transition: 1s;
+    font-weight: bold;
+}
+.navigation_header a:hover{
+    color: var(--color-white);
+}
+.active{
+    background: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .navigation_header, .logo_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var header = document.getElementById('header');
+    var navigationHeader = document.getElementById('navigation_header');
+    var content = document.getElementById('content');
+    var showSidebar = false;
+
+    function toggleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationHeader.style.marginLeft = '-10vw';
+            navigationHeader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.animationName = '';
+            content.style.filter = '';
+        }
+    }
+
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            showSidebar = true;
+            toggleSidebar();
+        }
+    }
+
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 768 && showSidebar) 
+        {  
+            showSidebar = true;
+            toggleSidebar();
+        }
+    });
+
+</script>
+
+
+
+
+</html>

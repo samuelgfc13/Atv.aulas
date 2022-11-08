@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO_NEWS</title>
+</head>
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="img/jusitça_eleitoral.png" alt="Logo" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="pagina_inicial.html" class="active">Home</a>
+            <a href="News.html">News</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="pagina_info.html">Informativo</a>
+            <a href="Podcast.html">Podcast</a>
+            <a href="game.html">Game</a>
+        </div>
+    </div>
+    <main>
+        <div class="gallery-container">
+            <a href="#chick-hicks" class="gallery-items">
+                <img src="img2/img1.png" alt="Chick Hicks">
+            </a>
+            <a href="img/doctor hudson.jpg" class="gallery-items">
+                <img src="img2/img2.jpg" alt="Doctor Hudson">
+            </a>
+            <a href="img/Fillmore.jpg" class="gallery-items">
+                <img src="img2/img4.jpg" alt="Fillmore">
+            </a>
+            <a href="img/flo.jpg" class="gallery-items">
+                <img src="img2/img5.jpg" alt="Flo">
+            </a>
+            <a href="img/Guido.png" class="gallery-items">
+                <img src="img2/img6.jpg" alt="Guido">
+            </a>
+            <a href="img/lightning-mcqueen.jpg" class="gallery-items">
+                <img src="img2/img7.jpg" alt="lightning-mcqueen">
+            </a>
+            <a href="img/Lizzie.jpg" class="gallery-items">
+                <img src="img2/img8.jpg" alt="Lizzie">
+            </a>
+            <a href="img/Luigi.png" class="gallery-items">
+                <img src="img2/img9.jpg" alt="Luigi">
+            </a>
+            <a href="img/Mack.jpg" class="gallery-items">
+                <img src="img2/img10.jpg" alt="Mack">
+            </a>
+            <a href="img/Ramone.jpg" class="gallery-items">
+                <img src="img2/img11.jpg" alt="Ramone">
+            </a>
+            <a href="img/Ruivo.jpg" class="gallery-items">
+                <img src="img2/img12.jpg" alt="Ruivo">
+            </a>
+            <a href="img/Sally Carrera.jpg" class="gallery-items">
+                <img src="img2/img13.jpg" alt="Sally">
+            </a>
+            <a href="img/Sheriff.jpg" class="gallery-items">
+                <img src="img2/img17.jpg" alt="Sheriff">
+            </a>
+            <a href="img/sven.jpg" class="gallery-items">
+                <img src="img2/img14.jpg" alt="Sven">
+            </a>
+            <a href="img/The King.jpg" class="gallery-items">
+                <img src="img2/img15.jpg" alt="The King">
+            </a>
+            <a href="img/Tow Mater.jpg" class="gallery-items">
+                <img src="img2/img16.jpg" alt="Tow Mater">
+            </a>
+        </div>        
+    </main>
+    <footer>
+        <span>Copyright &copy; | Trabalho final web 1</span>
+    </footer>
+</body>
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+.gallery-items{
+    width: 340px;
+    height: 340px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-items:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    background-color:rgb(251, 167, 49);
+
+}
+:root{
+    --color-white: #fff;
+    --color-dark1: rgb(252, 191, 7);
+    --color-dark2: #2d2d2d;
+    --color-dark3: #db5959;
+    --color-dark4: #da0c0c;
+    --color-dark5: rgb(252, 191, 7);
+    --color-purple: #ffffff;
+    }
+
+.logo_header{
+    width: 70px;
+}
+.header,
+.navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    background-color: rgb(251, 167, 49);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 7.5em;
+    box-shadow: 1px 1px 4px var(--color-dark4);
+}
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+.content{
+    padding-top: 5em;
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+}
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-purple);
+    transition: 1s;
+    font-weight: bold;
+}
+.navigation_header a:hover{
+    color: var(--color-white);
+}
+.active{
+    background: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .navigation_header, .logo_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
+
+</style>
+</html>

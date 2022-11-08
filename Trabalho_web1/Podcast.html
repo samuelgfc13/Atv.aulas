@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Player</title>
+    <body id="body">
+        <div class="header" id="header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="logo_header">
+                <img src="img/jusitça_eleitoral.png" alt="Logo" class="img_logo_header">
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+                <a href="pagina_inicial.html" class="active">Home</a>
+                <a href="News.html">News</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="pagina_info.html">Informativo</a>
+                <a href="Podcast.html">Podcast</a>
+                <a href="game.html">Game</a>
+            </div>
+        </div>
+        
+        </body>
+
+    <style type="text/css">
+    	
+    	:root {
+    --blue: #3d65ac;
+    --red: #ef3e39;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+html {
+    /*background: rgb(61, 101, 172);
+    background-image: linear-gradient(145deg, rgba(61, 101, 172, 1) 0%, rgba(239, 62, 57, 1) 100%);
+    background-size: cover;*/
+    height: 100%;
+}
+
+.player {
+    background: #FCF881;
+    border: 1px solid #bcc5d2;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*align-content: center;*/
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 140px;
+
+   
+    margin-top: 15px;
+
+}
+
+.player img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    margin-right: 25px;
+    width: auto;
+}
+
+.player img:active {
+    box-shadow: 0 0 10px #fff;
+    border-radius: 50%;
+}
+
+.player-wrapper {
+	background-color: #D1D0BE;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: justify;
+    margin-top: 25px;
+}
+img.capa-podcast{
+	border-radius: 5px;
+	margin-right: 10px;
+}
+footer{
+    margin-top: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    background-color:rgb(251, 167, 49);
+
+}
+
+
+:root{
+    --color-white: #fff;
+    --color-dark1: rgb(252, 191, 7);
+    --color-dark2: #2d2d2d;
+    --color-dark3: #db5959;
+    --color-dark4: #da0c0c;
+    --color-dark5: rgb(252, 191, 7);
+    --color-purple: #ffffff;
+    }
+
+.logo_header{
+    width: 70px;
+}
+.header,
+.navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    background-color: rgb(251, 167, 49);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 7.5em;
+    box-shadow: 1px 1px 4px var(--color-dark4);
+}
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+.content{
+    padding-top: 5em;
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+}
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-purple);
+    transition: 1s;
+    font-weight: bold;
+}
+.navigation_header a:hover{
+    color: var(--color-white);
+}
+.active{
+    background: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .navigation_header, .logo_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="player-wrapper">
+
+    				<img src="img/capa-o-assunto.jpg" class="capa-podcast">
+    				<h2>Os primeiros passos da transição</h2>
+    				<p>Vinte anos depois de ser eleito pela primeira vez, Lula terá que lidar com uma troca de guarda em tudo diferente daquela de 2002. A começar pelo fato de que, mais de 24 horas depois de anunciado o resultado, o adversário ainda não havia se pronunciado sobre a derrota. "Entre uma opção pacífica e o confronto”, o governo de Jair Bolsonaro (PL) “sempre escolheu o confronto", diz Thomas Traumann, pesquisador da FGV e colunista da revista Veja, que volta ao podcast para dar sequência à conversa com Renata Lo Prete sobre os resultados do 2° turno. O jornalista relembra “a transição modelo” entre Fernando Henrique Cardoso (PSDB) e Lula. Agora será outro padrão, prevê ele. Thomas explica as regras previstas na lei que rege as transições, como a indicação, pelo presidente eleito, de nomes que terão acesso a documentos e informações antes da posse, em 1º de janeiro...</p>
+        			<div class="player">
+            			<img src="icon/play.svg" alt="Play" id="play" width="48" height="48" onclick="doPlay()">
+
+            			<img src="icon/pause.svg" alt="Pause" id="pause" width="48" height="48" style="display: none;" onclick="doPause()">
+
+            			<img src="icon/stop.svg" alt="Stop" id="stop" width="48" height="48">
+        			</div>    
+    </div>
+    <footer>
+        <span>Copyright &copy; | Trabalho final web 1</span>
+    </footer>
+
+
+    <script type="text/javascript">
+    	
+    	'use strict'
+
+//Variável de controle
+var play = false;
+
+//Cria o componente de áudio especificando a URL
+var audio = new Audio('audio/Os_primeiros_passos_da_transi_o.mp3');
+
+document.querySelector('#play').addEventListener('click', () => {
+
+    if (play)
+        return;
+
+    //Reproduz o áudio
+    audio.play();
+
+    play = true;
+});
+
+document.querySelector('#pause').addEventListener('click', () => {
+
+    //Pausa o áudio
+    audio.pause();
+
+    play = false;
+});
+
+document.querySelector('#stop').addEventListener('click', () => {
+
+    //Pausa o áudio
+    audio.pause();
+
+    //Volta para o ínicio do track
+    audio.currentTime = 0;
+
+    play = false;
+});
+
+
+
+function doPlay() {
+    let el = document.getElementById('play');
+	el.style.display = 'none';
+
+	let el2 = document.getElementById('pause');
+	el2.style.display = 'block';
+}
+
+
+function doPause() {
+    let al = document.getElementById('pause');
+	al.style.display = 'none';
+
+	let al2 = document.getElementById('play');
+	al2.style.display = 'block';
+}
+
+
+    </script>
+</body>
+
+</html>

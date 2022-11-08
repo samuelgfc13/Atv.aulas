@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galeria de Imagens - CSS Grid</title>
+</head>
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="img/jusitça_eleitoral.png" alt="Logo" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="pagina_inicial.html" class="active">Home</a>
+            <a href="News.html">News</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="Podcast.html">Podcast</a>
+            <a href="pagina_info.html">Informativo</a>
+            <a href="game.html">Game</a>
+        </div>
+    </div>
+
+<body>
+    <main>
+        <div class="container-galeria">
+            <div class="item-galeria w-2 h-2">
+                <a href="https://www.correiobraziliense.com.br/cidades-df/2022/06/5015368-em-cenario-dividido-no-df-lula-tem-373-dos-votos-e-bolsonaro-346.html"><img src="img/img1.png" alt="" class="img-galeria"></a>
+                <span class="title-galeria">
+                    Você votaria em quem no 1º Turno?
+                </span>
+            </div>
+            <div class="item-galeria w-2 h-1">
+                <a href="https://www12.senado.leg.br/tv/programas/noticias-1/2022/10/eleicoes-2022-presidencia-da-republica-sera-decidida-no-segundo-turno"><img src="img/img2.jpg" alt="" class="img-galeria"></a>
+                <span class="title-galeria">
+                    Confira os candidatos a segundo turno.
+                </span>
+            </div>
+            <div class="item-galeria w-1 h-2">
+                <a href="https://www.poder360.com.br/eleicoes/bolsonaro-lidera-corrida-eleitoral-para-2022-com-35-lula-tem-21/"><img src="img/img3.png" alt="" class="img-galeria"></a>
+                <span class="title-galeria">
+                    Intenções de voto - 1º Turno
+                </span>
+            </div>
+            <div class="item-galeria w-1 h-1">
+                <a href="https://g1.globo.com/sp/sao-paulo/eleicoes/2022/noticia/2022/10/03/tarcisio-de-freitas-ganha-em-500-cidades-no-estado-de-sp-e-haddad-vence-na-capital-paulista-e-em-mais-90-municipios-no-1o-turno.ghtml"><img src="img/img4.jpg" alt="" class="img-galeria"></a>
+                <span class="title-galeria">
+                    Eleições para Governador de São Paulo - 1º Turno
+                </span>
+            </div>
+            <div class="item-galeria w-2 h-2">
+                <a href="https://www.poder360.com.br/eleicoes/tarcisio-e-haddad-disputarao-o-2o-turno-em-sao-paulo/"><img src="img/img5.png" alt="" class="img-galeria"></a>
+                <span class="title-galeria">
+                    Resultados para Governador SP - 1º Turno
+                </span> 
+            </div>
+            <div class="item-galeria w-1 h-2">
+                <a href="https://www.bbc.com/portuguese/brasil-63059143"><img src="img/img6.png" alt="" class="img-galeria"></a>
+                <span class="title-galeria">
+                    Resultados para Presidente - 1º Turno
+                </span>
+            </div>
+            <div class="item-galeria w-1 h-1">
+                <a href="https://g1.globo.com/es/espirito-santo/eleicoes/2022/noticia/2022/10/30/veja-resultados-do-2o-turno-das-eleicoes-2022-em-todos-os-municipios-do-es.ghtml"><img src="img/img7.jpg" alt="" class="img-galeria"></a>
+                <span class="title-galeria">
+                    Resultados do 2º turno das Eleições 2022 em todos os municípios do ES.
+                </span>
+            </div>
+            <div class="item-galeria w-1 h-1">
+                <a href="https://www.poder360.com.br/eleicoes/15-governadores-foram-eleitos-no-1o-turno/"><img src="img/img8.png" alt="" class="img-galeria"></a>
+                <span class="title-galeria">
+                    Quantas eleições terminaram no 1° turno? confira.
+                </span>
+            </div>
+            <div class="item-galeria w-1 h-1">
+                <a href="https://www.poder360.com.br/eleicoes/28-acham-que-a-contagem-de-votos-no-brasil-nao-e-segura/"><img src="img/img9.png" alt="" class="img-galeria"></a>
+                <span class="title-galeria">
+                    Você confia nas urnas? veja o que a população acha.
+                </span>
+            </div>
+        </div>
+        <footer>
+            <span>Copyright &copy; | Trabalho final web 1</span>
+        </footer>
+    </main>
+</body>
+
+
+<script>
+    var header = document.getElementById('header');
+    var navigationHeader = document.getElementById('navigation_header');
+    var content = document.getElementById('content');
+    var showSidebar = false;
+
+    function toggleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationHeader.style.marginLeft = '-10vw';
+            navigationHeader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.animationName = '';
+            content.style.filter = '';
+        }
+    }
+
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            showSidebar = true;
+            toggleSidebar();
+        }
+    }
+
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 768 && showSidebar) 
+        {  
+            showSidebar = true;
+            toggleSidebar();
+        }
+    });
+
+</script>
+
+</html>

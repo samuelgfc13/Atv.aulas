@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="img/jusitça_eleitoral.png" alt="Logo" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="pagina_inicial.html" class="active">Home</a>
+            <a href="News.html">News</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="pagina_info.html">Informativo</a>
+            <a href="Podcast.html">Podcast</a>
+            <a href="game.html">Game</a>
+        </div>
+    </div>
+    <main>
+    
+    <section class="conteiner">
+        <img src="img/urna.png" width="450" class= "urna">
+        <div id = "titulo"></div>
+        <ul class= "alter" onclick="audio.play()">
+            <li class="alternativa"></li>
+            <li class="alternativa" id= "cor"></li>
+        </ul>
+        <div id ="result"></div>
+        <div id = "pontos"></div> 
+    </section>
+    </main>
+
+
+
+</body>
+
+
+</html>
+
+<script src = "script.js"></script>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   #titulo{
+      position: absolute;
+      position: fixed; 
+      text-align: center;
+      top: 250px;
+      left: 310px;
+      width: 250px;
+      line-height: 30px;
+      height: 30px;
+   }
+    .alternativa{
+        text-decoration: none;
+        border-radius: 5px;
+        width: 75px;
+        text-align: center;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 9px;
+        background-color: #43A047;
+        color: #fff;
+
+    }
+    .alter #cor{
+        text-decoration: none;
+        border-radius: 5px;
+        width: 75px;
+        text-align: center;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 9px;
+        background-color: #a04343;
+        color: #fff; 
+        
+    }
+    .conteiner{
+        position: fixed;
+        width: 800px;
+        margin: auto;
+    }
+    .conteiner img{
+        position: relative;
+        position: fixed;
+        top: 180px;
+        left: 290px;
+        border: 5px solid rgb(9, 9, 9);
+        border-radius: 8px;
+    }
+
+    .alter{
+        position: absolute;
+        position: fixed;
+        display: flex;
+        list-style-type: none;
+        top: 354px;
+        left: 576px;
+        padding-left: 5px;
+    }
+    .alternativa:hover{
+        cursor: pointer;
+        opacity: 10;
+    }
+    #pontos{
+        position: absolute;
+        position: fixed;
+        top: 430px;
+        left: 467px;
+    }
+      #result{
+      position: absolute;
+      position: fixed; 
+      text-align: center;
+      top: 455px;
+      left: 398px;
+      width: 250px;
+      line-height: 30px;
+      height: 30px;
+    }
+    :root{
+    --color-white: #fff;
+    --color-dark1: rgb(252, 191, 7);
+    --color-dark2: #2d2d2d;
+    --color-dark3: #db5959;
+    --color-dark4: #da0c0c;
+    --color-dark5: rgb(252, 191, 7);
+    --color-purple: #ffffff;
+    }
+
+.logo_header{
+    width: 70px;
+}
+.header,
+.navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    background-color: rgb(251, 167, 49);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 7.5em;
+    box-shadow: 1px 1px 4px var(--color-dark4);
+}
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+.content{
+    padding-top: 5em;
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+}
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-purple);
+    transition: 1s;
+    font-weight: bold;
+}
+.navigation_header a:hover{
+    color: var(--color-white);
+}
+.active{
+    background: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .navigation_header, .logo_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
+    
